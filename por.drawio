@@ -1,1 +1,111 @@
-<mxfile host="app.diagrams.net" modified="2023-04-17T09:54:36.751Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" version="16.6.4" etag="5UZ-Sw0xuUnP6QOGUCN4" type="github"><diagram id="Xn9IPBEnonGKjjIb3kdK">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-04-17T10:05:55.547Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="K-aXZ01MSGeA5pHSlSvi" version="16.6.4" type="github">
+  <diagram id="Xn9IPBEnonGKjjIb3kdK" name="第 1 页">
+    <mxGraphModel dx="1018" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-1" value="vault 数据库" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="395" y="1210" width="205" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-3" target="Pe2yR2xNLdmjj7PRIvMM-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-3" value="定时任务" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="155" y="1100" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-6" target="Pe2yR2xNLdmjj7PRIvMM-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-6" target="Pe2yR2xNLdmjj7PRIvMM-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-6" value="根据币种和余额统计地址" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="167.5" y="1210" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-9" target="Pe2yR2xNLdmjj7PRIvMM-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-9" target="Pe2yR2xNLdmjj7PRIvMM-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-9" value="通过oklink/轻解析查询地址指定高度余额" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="167.5" y="1320" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-10" value="oklink/轻解析服务" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="407.5" y="1315" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-11" value="cefi签名服务" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1465" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-12" value="kafka&lt;br&gt;服务" style="rounded=0;whiteSpace=wrap;html=1;direction=south;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1410" width="60" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.333;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-14" target="Pe2yR2xNLdmjj7PRIvMM-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-14" value="验证地址签名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="167.5" y="1440" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-15" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-12" target="Pe2yR2xNLdmjj7PRIvMM-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="1530" as="sourcePoint" />
+            <mxPoint x="580" y="1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-16" target="Pe2yR2xNLdmjj7PRIvMM-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-16" value="全部签名成功" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="167.5" y="1530" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Pe2yR2xNLdmjj7PRIvMM-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="1560" as="sourcePoint" />
+            <mxPoint x="390" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-18" target="Pe2yR2xNLdmjj7PRIvMM-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-18" value="统计各个币种资产总和" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="167.5" y="1640" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-20" value="vault资产和资金对账" style="shape=lineEllipse;line=vertical;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1620" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-21" target="Pe2yR2xNLdmjj7PRIvMM-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-21" value="数据组服务" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1635" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-27" target="Pe2yR2xNLdmjj7PRIvMM-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-27" value="&lt;span&gt;对账成功后，生成csv文件&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1640" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-28" target="Pe2yR2xNLdmjj7PRIvMM-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-28" value="文件上传到OSS" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="1640" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Pe2yR2xNLdmjj7PRIvMM-31" target="Pe2yR2xNLdmjj7PRIvMM-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-31" value="通知资金服务" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d0cee2;strokeColor=#56517e;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1642.5" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe2yR2xNLdmjj7PRIvMM-33" value="结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="1650" width="130" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
